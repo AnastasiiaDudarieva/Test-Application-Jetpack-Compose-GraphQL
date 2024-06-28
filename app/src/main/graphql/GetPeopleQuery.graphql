@@ -1,0 +1,17 @@
+query GetPeople {
+    allPeople {
+        totalCount
+        people {
+            name
+            mass
+            height
+            id
+        }
+        pageInfo {
+            startCursor
+            hasPreviousPage
+            hasNextPage
+            endCursor
+        }
+    }
+}
